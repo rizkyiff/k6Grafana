@@ -1,0 +1,22 @@
+{
+  "environments": {
+    "development": {
+      "baseUrl": "http://dev-api.example.com",
+      "thresholds": {
+        "http_req_duration": ["p(95)<500"]
+      }
+    },
+    "staging": {
+      "baseUrl": "http://staging-api.example.com",
+      "thresholds": {
+        "http_req_duration": ["p(95)<400"]
+      }
+    },
+    "production": {
+      "baseUrl": "http://api.example.com",
+      "thresholds": {
+        "http_req_duration": ["p(95)<300"]
+      }
+    }
+  }
+} 
